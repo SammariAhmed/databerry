@@ -72,7 +72,7 @@ export default function Home() {
           property="og:description"
           content="With our no-code platform, create a custom AI chatbot trained on your data in seconds. Streamline customer support, onboard new team members, and more!"
         />
-        <meta property="og:url" content="https://www.databerry.ai/" />
+        <meta property="og:url" content="https://databerry.kosmostechnologies.fr/" />
         <meta property="og:site_name" content="Databerry" />
         <meta property="og:type" content="website" />
       </Head>

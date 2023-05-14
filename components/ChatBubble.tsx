@@ -216,7 +216,7 @@ function App(props: { agentId: string; initConfig?: AgentInterfaceConfig }) {
             />
           </Box>
           <a
-            href="https://databerry.ai"
+            href="https://databerry.kosmostechnologies.fr"
             target="_blank"
             style={{
               textDecoration: 'none',

@@ -138,7 +138,7 @@ export function HeroChatGPTPlugin() {
           </Link>
         </Stack>
         <div className="flex justify-center mt-10 gap-x-6">
-          {/* <Button target="_blank" href="https://app.databerry.ai/signin">Start Building</Button> */}
+          {/* <Button target="_blank" href="https://databerry.kosmostechnologies.fr/signin">Start Building</Button> */}
           {/* <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"

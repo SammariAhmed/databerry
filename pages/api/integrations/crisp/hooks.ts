@@ -130,7 +130,7 @@ const handleSendInput = async ({
     user: {
       type: 'participant',
       nickname: agentName || 'Databerry.ai',
-      avatar: 'https://databerry.ai/databerry-rounded-bg-white.png',
+      avatar: 'https://databerry.kosmostechnologies.fr/databerry-rounded-bg-white.png',
     },
 
     content: {
@@ -170,7 +170,7 @@ const handleQuery = async (
         user: {
           type: 'participant',
           nickname: agent?.name || 'Databerry.ai',
-          avatar: 'https://databerry.ai/databerry-rounded-bg-white.png',
+          avatar: 'https://databerry.kosmostechnologies.fr/databerry-rounded-bg-white.png',
         },
       }
     );
@@ -186,7 +186,7 @@ const handleQuery = async (
     user: {
       type: 'participant',
       nickname: agent?.name || 'Databerry.ai',
-      avatar: 'https://databerry.ai/databerry-rounded-bg-white.png',
+      avatar: 'https://databerry.kosmostechnologies.fr/databerry-rounded-bg-white.png',
     },
   });
 

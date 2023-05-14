@@ -75,7 +75,7 @@ export const widgetActions = async (
       origin: 'chat',
       user: {
         nickname: 'Databerry.ai',
-        avatar: 'https://databerry.ai/databerry-rounded-bg-white.png',
+        avatar: 'https://databerry.kosmostechnologies.fr/databerry-rounded-bg-white.png',
       },
       stealth: true,
       content: `Summary:\n${output}`,

@@ -41,7 +41,7 @@ const solutions = [
     name: 'Crisp Plugin',
     description:
       'Connect your agent to Crisp. Summarize conversations and more!',
-    href: 'https://www.databerry.ai/products/crisp-plugin',
+    href: 'https://databerry.kosmostechnologies.fr/products/crisp-plugin',
     icon: (props: any) => (
       <img
         {...props}
@@ -53,7 +53,7 @@ const solutions = [
   {
     name: 'Slack Bot',
     description: 'Deploy an Agent trained on your data to Slack',
-    href: 'https://www.databerry.ai/products/slack-bot',
+    href: 'https://databerry.kosmostechnologies.fr/products/slack-bot',
     icon: (props: any) => (
       <img
         {...props}

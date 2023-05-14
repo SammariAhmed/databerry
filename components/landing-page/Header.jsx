@@ -145,9 +145,9 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             {/* <div className="hidden md:block">
-              <NavLink href="https://app.databerry.ai">Sign in</NavLink>
+              <NavLink href="https://databerry.kosmostechnologies.fr">Sign in</NavLink>
             </div> */}
-            {/* <Button target="_blank" href="https://app.databerry.ai/signin" color="blue">
+            {/* <Button target="_blank" href="https://databerry.kosmostechnologies.fr/signin" color="blue">
               <span>
                 Sign In
               </span>
