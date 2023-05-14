@@ -48,7 +48,7 @@ export const generateOpenApiYaml = async (
   doc.setIn(['info', 'description'], datastore.description);
   doc.setIn(
     ['info', 'servers', 0, 'url'],
-    `https://api.databerry.ai/datastores/query/${datastore.id}`
+    `https://databerry.kosmostechnologies.fr/datastores/query/${datastore.id}`
     // `http://localhost:3000`
   );
 
