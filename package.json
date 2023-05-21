@@ -11,9 +11,9 @@
     "publish:package:chat-bubble": "npm run build:widget:chat-bubble && cp dist/chat-bubble* packages/chat-bubble/ && cd packages/chat-bubble && npm version patch && npm publish --access public",
     "prisma:generate": "prisma generate",
     "prisma:migrate:dev": "dotenv -e .env.local -- prisma migrate dev",
-    "prisma:migrate:prod": "dotenv -e .env.local -- prisma migrate deploy",
-    "prisma:migrate:seed": "dotenv -e .env.local -- prisma db seed",
-    "worker:datasource-loader": "dotenv -e .env.local -- npx tsx --watch workers/datasource-loader.ts",
+    "prisma:migrate:prod": "dotenv -e .env -- prisma migrate deploy",
+    "prisma:migrate:seed": "dotenv -e .env -- prisma db seed",
+    "worker:datasource-loader": "dotenv -e .env.local -- npx tsx workers/datasource-loader.ts",
     "dotenv": "dotenv -e .env.local",
     "set-env:prod": "cat .env.prod.local | xargs flyctl --config fly/fly.toml secrets set"
   },

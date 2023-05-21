@@ -56,6 +56,7 @@ RUN NODE_OPTIONS="--max_old_space_size=4096" yarn build
 # Production image, copy all the files and run next
 FROM base AS runner
 WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 
 ENV NODE_ENV production
 # Uncomment the following line in case you want to disable telemetry during runtime.
@@ -65,22 +66,13 @@ RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
+COPY --from=builder /app/prisma ./prisma
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/server ./server
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-# TODO: Improve this. Output file tracing is removing modules needed for workers
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN \
-    if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-    elif [ -f package-lock.json ]; then npm ci; \
-    elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i ; \
-    else echo "Lockfile not found." && exit 1; \
-    fi
-RUN rm -rf node_modules/.pnpm/canvas@2.11.0
 
 USER nextjs
 

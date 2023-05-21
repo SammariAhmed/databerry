@@ -14,3 +14,7 @@ dist
 packages
 .env.local
 .env.prod.local
+.pnpm-store
+docker-compose.yml
+.github
+.vscode

@@ -41,3 +41,6 @@ migration.ts
 
 dist
 packages/chat-bubble/chat-bubble*
+
+.pnpm-store/
+.env
